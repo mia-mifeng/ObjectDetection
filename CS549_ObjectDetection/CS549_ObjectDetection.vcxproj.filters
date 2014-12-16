@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\SVM">
+      <UniqueIdentifier>{6da58137-3f3d-435c-8494-018cb2ba6843}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Samples">
+      <UniqueIdentifier>{fb8d7856-37ac-4404-b7ad-63897967210a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libsvm\libsvm.h">
+      <Filter>Resource Files\SVM</Filter>
+    </ClInclude>
+    <ClInclude Include="svmlight\svmlight.h">
+      <Filter>Resource Files\SVM</Filter>
+    </ClInclude>
+    <ClInclude Include="svmlight\kernel.h">
+      <Filter>Resource Files\SVM</Filter>
+    </ClInclude>
+    <ClInclude Include="svmlight\svm_common.h">
+      <Filter>Resource Files\SVM</Filter>
+    </ClInclude>
+    <ClInclude Include="svmlight\svm_learn.h">
+      <Filter>Resource Files\SVM</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cam_color.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="svmlight\svm_classify.c">
+      <Filter>Resource Files\SVM</Filter>
+    </ClCompile>
+    <ClCompile Include="svmlight\svm_common.c">
+      <Filter>Resource Files\SVM</Filter>
+    </ClCompile>
+    <ClCompile Include="svmlight\svm_hideo.c">
+      <Filter>Resource Files\SVM</Filter>
+    </ClCompile>
+    <ClCompile Include="svmlight\svm_learn.c">
+      <Filter>Resource Files\SVM</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorRecognition.cpp">
+      <Filter>Resource Files\Samples</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageDisplay.cpp">
+      <Filter>Resource Files\Samples</Filter>
+    </ClCompile>
+    <ClCompile Include="PeopleDetect.cpp">
+      <Filter>Resource Files\Samples</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape_Multi.cpp">
+      <Filter>Resource Files\Samples</Filter>
+    </ClCompile>
+    <ClCompile Include="TriangleImage.cpp">
+      <Filter>Resource Files\Samples</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

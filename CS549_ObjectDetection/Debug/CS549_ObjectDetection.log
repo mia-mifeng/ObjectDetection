@@ -1,0 +1,66 @@
+﻿Build started 12/16/2014 2:14:48 PM.
+     1>Project "D:\Projects\OpenCV\CS549_ObjectDetection - Backup\CS549_ObjectDetection\CS549_ObjectDetection.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\OpenCV\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt cam_color.cpp ColorRecognition.cpp Global.cpp ImageDisplay.cpp Main.cpp PeopleDetect.cpp Shape_Multi.cpp TriangleImage.cpp
+         TriangleImage.cpp
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\utility.h(79): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\utility.h(102): warning C4018: '<' : signed/unsigned mismatch
+         Shape_Multi.cpp
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\utility.h(79): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\utility.h(102): warning C4018: '<' : signed/unsigned mismatch
+         PeopleDetect.cpp
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\utility.h(79): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\utility.h(102): warning C4018: '<' : signed/unsigned mismatch
+         Main.cpp
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\utility.h(79): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\utility.h(102): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\svmlight\svmlight.h(136): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\svmlight\svmlight.h(138): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\svmlight\svmlight.h(148): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\global.h(227): warning C4244: '=' : conversion from 'unsigned long' to 'float', possible loss of data
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\global.h(273): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\global.h(275): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\global.h(294): warning C4101: 'percent' : unreferenced local variable
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\global.h(421): warning C4018: '<' : signed/unsigned mismatch
+         ImageDisplay.cpp
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\utility.h(79): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\utility.h(102): warning C4018: '<' : signed/unsigned mismatch
+         Global.cpp
+         ColorRecognition.cpp
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\utility.h(79): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\utility.h(102): warning C4018: '<' : signed/unsigned mismatch
+         cam_color.cpp
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\utility.h(79): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\utility.h(102): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\global.h(189): warning C4715: 'importImageSamples' : not all control paths return a value
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\global.h(256): warning C4715: 'getSamplesToGenerateFeatures' : not all control paths return a value
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\OpenCV\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt svmlight\svm_classify.c svmlight\svm_common.c svmlight\svm_hideo.c svmlight\svm_learn.c
+         svm_learn.c
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\svmlight\svm_learn.c(3492): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\svmlight\svm_learn.c(3845): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\svmlight\svm_learn.c(3895): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         svm_hideo.c
+         svm_common.c
+     1>d:\projects\opencv\cs549_objectdetection - backup\cs549_objectdetection\svmlight\svm_common.c(394): warning C4244: '*=' : conversion from 'double' to 'float', possible loss of data
+         svm_classify.c
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Projects\OpenCV\CS549_ObjectDetection - Backup\Debug\CS549_ObjectDetection.exe" /INCREMENTAL /NOLOGO /LIBPATH:..\OpenCV\lib opencv_calib3d2410d.lib opencv_contrib2410.lib opencv_core2410d.lib opencv_features2d2410d.lib opencv_flann2410d.lib opencv_highgui2410d.lib opencv_gpu2410d.lib opencv_imgproc2410d.lib opencv_legacy2410d.lib opencv_ml2410d.lib opencv_objdetect2410d.lib opencv_video2410d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Projects\OpenCV\CS549_ObjectDetection - Backup\Debug\CS549_ObjectDetection.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Projects\OpenCV\CS549_ObjectDetection - Backup\Debug\CS549_ObjectDetection.lib" /MACHINE:X86 Debug\cam_color.obj
+         Debug\ColorRecognition.obj
+         Debug\Global.obj
+         Debug\ImageDisplay.obj
+         Debug\Main.obj
+         Debug\PeopleDetect.obj
+         Debug\Shape_Multi.obj
+         Debug\svm_classify.obj
+         Debug\svm_common.obj
+         Debug\svm_hideo.obj
+         Debug\svm_learn.obj
+         Debug\TriangleImage.obj
+         CS549_ObjectDetection.vcxproj -> D:\Projects\OpenCV\CS549_ObjectDetection - Backup\Debug\CS549_ObjectDetection.exe
+     1>Done Building Project "D:\Projects\OpenCV\CS549_ObjectDetection - Backup\CS549_ObjectDetection\CS549_ObjectDetection.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:12.67
