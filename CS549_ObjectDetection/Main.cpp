@@ -177,8 +177,8 @@ int main_main(int argc, char** argv)
 		{
 			detectPrep();
 			VideoCapture cap(CV_CAP_ANY);
-			cap.set(CV_CAP_PROP_FRAME_WIDTH, 480);
-			cap.set(CV_CAP_PROP_FRAME_HEIGHT, 480);
+			cap.set(CV_CAP_PROP_FRAME_WIDTH, 320);
+			cap.set(CV_CAP_PROP_FRAME_HEIGHT, 240);
 			if (!cap.isOpened())
 				return EXIT_FAILURE;
 

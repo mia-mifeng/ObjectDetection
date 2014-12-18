@@ -22,9 +22,9 @@ Global Variables
 //color recognition
 const Vec3i blueTop = Vec3i(106, 255, 200);//HSV
 const Vec3i blueBottom = Vec3i(86, 100, 100);//HSV
-const int bluePercent = 64;
-const Vec3i yellowTop = Vec3i(40, 255, 255);//29, 254, 255
-const Vec3i yellowBottom = Vec3i(13, 0, 100); //23, 49, 149
+const int bluePercent = 16;
+const Vec3i yellowTop = Vec3i(35, 255, 255);//29, 254, 255
+const Vec3i yellowBottom = Vec3i(18, 0, 100); //23, 49, 149
 const int yellowPercent = 2;
 
 // HOG parameters for training that for some reason are not included in the HOG class
@@ -374,8 +374,27 @@ bool imageDetection( Mat& img, HOGDescriptor& hog)
 {
 	//HoG
 	vector<Rect> found, filteredFound;
-	hog.detectMultiScale(img, found, params.hitThreshold, Size(16,16), trainingPadding, 1.1);
+	if (img.cols <= 480 && img.rows <= 480)
+	{
+		hog.detectMultiScale(img, found, params.hitThreshold, Size(16, 16), trainingPadding, 1.1);
+	}
+	else
+	{
+		hog.detectMultiScale(img, found, params.hitThreshold, Size(8, 8), trainingPadding, 4);
+	}
+	
 
+	/*if (img.cols * img.rows > 2 ^ 17)
+	{
+		if (img.cols>img.rows)
+		{
+			resize(img, img, Size(320, 320*img.rows/img.cols));
+		}
+		else
+		{
+			resize(img, img, Size(img.cols * 320/img.rows, 320));
+		}
+	}*/
 	//debug log
 	//if (found.size())
 	//	cout << "Found number: " << found.size() << endl;
@@ -399,7 +418,7 @@ bool imageDetection( Mat& img, HOGDescriptor& hog)
 	vector<vector<Point> > contours;
 	// find
 	findContours(imgThresholded, contours, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_NONE);
-	drawContours(img, contours, -1, Scalar(255, 0, 0), 2);
+	drawContours(img, contours, -1, Scalar(255, 0, 0), 1);
 
 	Mat yellowThres;
 	//Threshold the image
@@ -416,16 +435,17 @@ bool imageDetection( Mat& img, HOGDescriptor& hog)
 	contours.clear();
 	// find
 	findContours(yellowThres, contours, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_NONE);
-	drawContours(img, contours, -1, Scalar(0, 255, 255), 2);
+	drawContours(img, contours, -1, Scalar(0, 255, 255), 1);
 
 	for (int index = 0; index < (found.size()<1?found.size():1); index++) //no more than 1
 	//for (int index = 0; index < found.size() ; index++)
 	{
 		Rect rect = found[index];
+		
 		int green = 50;
 		if (index == 0)
 			green = 255;
-		
+
 		//verification
 		int percent = 0;
 		for (int i = (rect.tl().y<0 ? 0 : rect.tl().y);
@@ -438,7 +458,7 @@ bool imageDetection( Mat& img, HOGDescriptor& hog)
 			}
 		}
 		percent = percent * 100 / rect.area();
-
+		
 		if (percent > bluePercent)
 		{
 			filteredFound.push_back(found[index]);
@@ -468,9 +488,14 @@ bool imageDetection( Mat& img, HOGDescriptor& hog)
 		percent = percent * 100 / rect.area();
 		if (percent > yellowPercent)
 		{
-			rectangle(img, rect.tl(), rect.br(), cv::Scalar(0, 255, 0), 4);
+			rectangle(img, rect.tl(), rect.br(), cv::Scalar(0, 255, 0), 2);
 		}
 	}
+	if (img.cols <= 480 && img.rows <= 480)
+	{
+		resize(img, img, Size(img.cols * 2, img.rows * 2));
+	}
+	
 	imshow("Object Detection", img);
 	img.release();
 	
