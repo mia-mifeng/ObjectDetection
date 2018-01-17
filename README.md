@@ -3,7 +3,7 @@ An object detection program -- detecting the Goofy Bird
 
 ### Quick Links
 - [Demo Video](http://users.wpi.edu/~mfeng2/diy/hellobird/hellobird.html)
-- [Blogpost: (for Windows) OpenCV Installation and Visual Studio Project Configuration](http://fmamimi.weebly.com/blog/opencv-installation-and-visual-studio-project-configuration)
+- [Blogpost: (for Windows) OpenCV Installation and Visual Studio Project Configuration](http://www.mifeng.name/2014/11/24/Install-OpenCV-&-Configure-Visual-Studio-Project.html)
 
 ### Detection Technique
 - Histogram of Oriented Gradients (HoG)
